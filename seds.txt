@@ -1,0 +1,76 @@
+--------------------VARIABLES------------------------------------ 
+##os_release         #user_selected-> ##selected_os
+##true_or_false      #user_selected-> ##boolean
+##forwarded_port     #user_selected-> ##selected_fowarded_port
+##private_ipaddress  #user_selected-> ##private_ip
+##public_ipaddress   #user_selected-> ##public_ip
+##synced_folder_path #user_selected-> ##path_to_folder
+##gui_boolean        #user_selected-> ##gui_boolean_selected
+##vmram              #user_selected-> ##ram_mem
+##vm_cpu_cores       #user_selected-> ##selected_vm_cpu_cores
+##vmname             #user_selected-> ##my_vmname
+
+-----------------------------------------------------------------
+
+#Os/Release
+sed -i 's/#release/  config/g' Vagrantfile
+sed -i 's/$os_release/$selected_os/g' Vagrantfile
+
+#Check Update
+sed -i 's/#checkupdate/  config/g' Vagrantfile
+sed -i 's/$true_or_false/$boolean/g' Vagrantfile
+
+#Forwarded Port
+sed -i 's/#dconfig/  config/g' Vagrantfile
+sed -i 's/$forwarded_port/$selected_fowarded_port/g' Vagrantfile
+
+##Dhcp
+sed -i 's/#dhcpip/  config/g' Vagrantfile
+
+##STATIC IP ADRESSING
+
+#Private IP
+sed -i 's/#staticprivateip/  config/g' Vagrantfile
+sed -i 's/$private_ipaddress/$private_ip/g' Vagrantfile
+
+#Public IP
+sed -i 's/#staticpublicip/  config/g' Vagrantfile
+sed -i 's/$public_ipaddress/$private_ip/g' Vagrantfile
+
+#SYNCED FOLDER
+sudo apt-get install nfs-common nfs-kernel-server
+sed -i 's/#syncedfolder/  config/g' Vagrantfile
+sed -i 's/$synced_folder_path/$path_to_folder/g' Vagrantfile
+
+#PROVIDER SET HARDWARE
+sed -i 's/#vmprovider/  /g' Vagrantfile
+
+#VBOXGUI
+sed -i 's/#displayvboxgui/    /g' Vagrantfile
+sed -i 's/$gui_boolean/gui_boolean_selected/g' Vagrantfile
+
+#VMName
+sed -i 's/#vmname/    /g' Vagrantfile
+sed -i 's/#vmname/$my_vmname/g' Vagrantfile
+
+
+##HARDWARE
+#Ram mem
+sed -i 's/#vmmemory/    /g' Vagrantfile
+sed -i 's/$vm_ram/$selected_vm_ram/g' Vagrantfile
+
+#Vm CPU Cores
+sed -i 's/#vmcpucoresv/    /g' Vagrantfile
+sed -i 's/$vm_cpu_cores/$selected_vm_cpu_cores/g' Vagrantfile
+
+#Provider end
+sed -i 's/#provisionend//g' Vagrantfile
+
+
+
+
+
+
+
+
+
