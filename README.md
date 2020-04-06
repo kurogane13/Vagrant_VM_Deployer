@@ -16,7 +16,7 @@ Setting up the program:
 * Access the cloned and downloaded folder
 
 * To run the program: open a linux terminal and run the bash file Deploy-Vagrant-vm.sh.
-  bash Deploy-Vagrant-'vm.sh
+  bash Deploy-Vagrant-vm.sh
   
 Optional: if you want to launch the program with a Desktop icon, you can use the 'Vagrant_Launcher.desktop' file. Just change the path replacing the $USER var to your user, and and you can run it from your home folder. Remember all files should be in your home folder.
  
