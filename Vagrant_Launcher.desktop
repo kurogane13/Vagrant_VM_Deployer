@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Vagrant_Launcher
+Comment=
+Exec=gnome-terminal -- bash /home/gus/Deploy-Vagrant-vm.sh
+Icon=/home/gus/Downloads/Vagrant_program/Vagrant.png
+Terminal=false
+Type=Application
+Categories=Application
+Name[en_US]=Vagrant_Launcher
