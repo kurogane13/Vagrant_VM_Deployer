@@ -11,7 +11,7 @@ Setting up the program:
   
   2. sudo dpkg -i vagrant_2.2.7_x86_64.deb
 
-* Clone the repo
+* Clone the repo (git clone)
 
 * Access the cloned and downloaded folder
 
