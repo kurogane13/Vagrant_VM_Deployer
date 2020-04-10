@@ -11,9 +11,13 @@ Setting up the program:
   
   2. sudo dpkg -i vagrant_2.2.7_x86_64.deb
 
-* Clone the repo (git clone)
+* Clone the repo (git clone) to your /home/$USER folder
 
-* Access the cloned and downloaded folder
+* Rename Vagrant_VM_Deployer to VAGRANTFILES
+
+  - mv Vagrant_VM_Deployer VAGRANTFILES
+
+* Access the VAGRANTFILES folder
 
 * To run the program: open a linux terminal and run the bash file Deploy-Vagrant-vm.sh.
   bash Deploy-Vagrant-vm.sh
